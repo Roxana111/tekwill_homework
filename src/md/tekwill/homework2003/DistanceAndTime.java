@@ -1,13 +1,23 @@
 package md.tekwill.homework2003;
-
+import java.util.Scanner;
 public class DistanceAndTime {
     public static void main(String[] args){
-        int distancemeter=2500, hour=5, minutes=56, seconds=23;
+        Scanner in= new Scanner(System.in);
         float  totalTimeSeconds,totalTimeHours,distancekm, distancemiles;
         float mps, kph, mph;
-        System.out.println("Input distance in meters: "+distancemeter);
-        System.out.println("Input hour:" +hour);
-        System.out.println ("Input seconds:" +seconds);
+
+        System.out.println("Input distance in meters: ");
+        int distancemeter=in.nextInt();
+
+        System.out.println("Input hour:");
+        int hour=in.nextInt();
+
+        System.out.println("Input minutes: ");
+        int minutes=in.nextInt();
+
+        System.out.println ("Input seconds:");
+        int seconds=in.nextInt();
+
         distancekm=distancemeter/1000f;
         distancemiles=distancemeter/1609f;
         totalTimeSeconds=(hour*3600f)+(minutes*60f)+seconds;
