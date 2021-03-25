@@ -9,12 +9,10 @@ public class PositiveOrNegative {
         float number = in.nextFloat();
         if (number > 0.0F) {
             System.out.print(number + " is positive");
-        }
-        else if (number < 0.0F) {
+        } else if (number < 0.0F) {
             System.out.println(number + " is negative");
-        }
-        else
+        } else
             System.out.println(number + " is equal to 0");
-        }
+    }
 
 }
