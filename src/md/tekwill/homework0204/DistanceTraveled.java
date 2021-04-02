@@ -7,7 +7,7 @@ public class DistanceTraveled {
         Scanner in = new Scanner(System.in);
         System.out.print("Enter the speed in miles per hour: ");
         double speed = in.nextDouble();
-        System.out.print("Enter the speed in miles per hour: ");
+        System.out.print("Enter the time in hours: ");
         int time = in.nextInt();
         double distance;
         System.out.println("Hour  Distance Travelled\n----\t-------");
