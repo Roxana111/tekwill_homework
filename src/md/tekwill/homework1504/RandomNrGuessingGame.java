@@ -8,12 +8,12 @@ public class RandomNrGuessingGame {
         Scanner in = new Scanner(System.in);
         Random rand = new Random();
         int randomNr;
+        randomNr = rand.nextInt(50);
+        randomNr += 1;
         int guess;
         do {
             System.out.println("Enter your guess between 1-50 ");
             guess = in.nextInt();
-            randomNr = rand.nextInt(50);
-            randomNr += 1;
             if (guess > randomNr) {
                 System.out.println("Too high, try again!");
             } else if (randomNr > guess) {
