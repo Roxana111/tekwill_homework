@@ -1,20 +1,20 @@
 package md.tekwill.homework3105.exercise2;
 
-public class Book extends Author{
+public class Book {
     private String name;
     private Author author;
     private double price;
     private int qty;
 
     public Book(String name, Author author, double price) {
-        super(author.getName(), author.getEmail(), author.getGender());
+
         this.name = name;
         this.author = author;
         this.price = price;
     }
 
     public Book(String name, Author author, double price, int qty) {
-        super(author.getName(), author.getEmail(), author.getGender());
+
         this.name = name;
         this.author = author;
         this.price = price;

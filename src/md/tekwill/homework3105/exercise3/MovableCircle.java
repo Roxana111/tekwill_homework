@@ -1,36 +1,36 @@
 package md.tekwill.homework3105.exercise3;
 
-public class MovableCircle extends MovablePoint implements Movable {
+public class MovableCircle implements Movable {
     private int radius;
     private MovablePoint center;
 
     public MovableCircle(int x, int y, int xSpeed, int ySpeed, int radius) {
-        super(x, y, xSpeed, ySpeed);
+        this.center = new MovablePoint(x, y, xSpeed, ySpeed);
         this.radius = radius;
     }
 
     @Override
     public String toString() {
-        return "Movable Circle " + "Radius = " + radius + " Center = " + center ;
+        return "Movable Circle " + "Radius = " + radius + " Center = " + center;
     }
 
     @Override
     public void moveUp() {
-        y++;
+        this.center.moveUp();
     }
 
     @Override
     public void moveDown() {
-        y--;
+        this.center.moveDown();
     }
 
     @Override
     public void moveLeft() {
-        x--;
+        this.center.moveLeft();
     }
 
     @Override
     public void moveRight() {
-        x++;
+        this.center.moveRight();
     }
 }
