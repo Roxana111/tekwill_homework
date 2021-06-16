@@ -6,6 +6,11 @@ public class Book {
     private double price;
     private int qty;
 
+    public Book(String name, Author author){
+       this.name=name;
+       this.author=author;
+
+    }
     public Book(String name, Author author, double price) {
 
         this.name = name;
@@ -49,4 +54,5 @@ public class Book {
     public String toString() {
         return "Book Name : " + name + " by : " + author + ", price is : "+price + "$"+ " qty: "+qty;
     }
+
 }
